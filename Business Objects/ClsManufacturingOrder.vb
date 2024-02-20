@@ -159,6 +159,23 @@ Namespace Decimal_Rounding
 
                             End Try
 
+                            If BusinessObjectInfo.FormTypeEx = "CT_PF_AdtBtch" Then
+                                Dim obj As SAPbouiCOM.Form = objaddon.objapplication.Forms.Item(BusinessObjectInfo.FormUID)
+                                Dim Btdoc As String = obj.DataSources.DBDataSources.Item("@CT_PF_OABT").GetValue("DocEntry", 0)
+                                Dim Batchno As String = obj.DataSources.DBDataSources.Item("@CT_PF_OABT").GetValue("U_DistNumber", 0)
+                                Dim U_BADETAIL As String = obj.DataSources.DBDataSources.Item("@CT_PF_OABT").GetValue("U_BADETAIL", 0)
+
+                                If (U_BADETAIL Is Nothing Or U_BADETAIL.Trim = "") Then
+                                    Dim lstrquery As String = "SELECT MAx(""U_BachDetls"") as ""U_BachDetls""  FROM ""@CT_PF_OMOR"" cpo WHERE ""U_BatchNo""  ='" + Batchno + "'"
+                                    Dim updateval As String = clsModule.objaddon.objglobalmethods.getSingleValue(lstrquery)
+                                    If (Not updateval.Trim = "") Then
+                                        obj.DataSources.DBDataSources.Item("@CT_PF_OABT").SetValue("U_BADETAIL", 0, updateval)
+                                        obj.Mode = SAPbouiCOM.BoFormMode.fm_UPDATE_MODE
+                                        obj.Items.Item("1").Click()
+                                    End If
+                                End If
+
+                            End If
                             'If objform.Items.Item("9").Specific.Selected.Value = "RL" Then objform.Items.Item("btnDCP").Enabled = False
                     End Select
                 End If

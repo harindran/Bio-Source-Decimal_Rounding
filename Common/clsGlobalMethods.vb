@@ -501,15 +501,15 @@ addrow:
 
         Public Sub WriteErrorLog(ByVal Str As String)
             Dim Foldername, Attachpath As String
-            Attachpath = "E:\Chitra\YMH\" 'getSingleValue("select ""AttachPath"" from OADP")
-            Foldername = Attachpath + "Log\Payment"
+
+            Foldername = "Log"
             If Directory.Exists(Foldername) Then
             Else
                 Directory.CreateDirectory(Foldername)
             End If
 
             Dim fs As FileStream
-            Dim chatlog As String = Foldername & "\Log_" & System.DateTime.Now.ToString("ddMMyyHHmmss") & ".txt"
+            Dim chatlog As String = Foldername & "\Log_" & System.DateTime.Now.ToString("ddMMyy") & ".txt"
             If File.Exists(chatlog) Then
             Else
                 fs = New FileStream(chatlog, FileMode.Create, FileAccess.Write)
@@ -547,6 +547,19 @@ addrow:
                 Return False
             End Try
 
+        End Function
+
+        Public Function CtoD(ByVal Pstring As Object) As Decimal
+            CtoD = 0
+            Try
+                Dim LdblResult As Decimal
+                If Pstring Is Nothing Then Return CtoD
+                Dim Lstr As String = System.Convert.ToString(Pstring)
+                If Decimal.TryParse(Lstr, LdblResult) Then CtoD = LdblResult
+                Return CtoD
+            Catch ex As Exception
+                Throw ex
+            End Try
         End Function
 
     End Class

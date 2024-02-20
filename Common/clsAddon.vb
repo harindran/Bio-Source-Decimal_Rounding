@@ -299,7 +299,7 @@ Namespace Decimal_Rounding
                                     objform.DataSources.DataTables.Item("dtBatches").SetValue("BatchQty", 0, Qty) 'objrs.Fields.Item("Qty").Value
                                     strsql = objglobalmethods.getSingleValue("Select 1 as ""Status"" from OWHS Where ""WhsCode""='" & objrs.Fields.Item("Warehouse").Value & "' and ""BinActivat""='Y'")
                                     If strsql = "1" Then
-                                        objform.DataSources.DataTables.Item("dtBatches").SetValue("BinQty", 0, CDbl(Qty))
+                                        objform.DataSources.DataTables.Item("dtBatches").SetValue("BinQty", 0, objaddon.objglobalmethods.CtoD(Qty).ToString())
                                     End If
                                     objform.DataSources.DataTables.Item("dtBatches").SetValue("ExpDate", 0, objrs.Fields.Item("ExpDate").Value)
                                     objform.DataSources.DataTables.Item("dtBatches").SetValue("ManDate", 0, objrs.Fields.Item("MfgDate").Value)
@@ -363,6 +363,7 @@ Namespace Decimal_Rounding
                 'End Select
                 Select Case pVal.FormTypeEx
                     Case "CT_PF_ManufacOrd"
+                    Case "CT_PF_AdtBtch"
                         objManFactOrder.FormDataEvent(pVal, BubbleEvent)
                 End Select
                 'End If

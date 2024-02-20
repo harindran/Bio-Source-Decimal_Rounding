@@ -212,6 +212,26 @@ Namespace Decimal_Rounding
                                 End If
                             End If
 
+
+                            If objform.TypeEx.ToUpper() = "41" And pVal.ItemUID = "1" Then
+                                Dim mtx As SAPbouiCOM.Matrix = objform.Items.Item("3").Specific
+
+                                For index = 1 To mtx.RowCount
+                                    If String.IsNullOrEmpty(mtx.Columns.Item("10").Cells.Item(index).Specific.String) Then
+                                        objaddon.objapplication.StatusBar.SetText("Kindly Fill Expiry Date", SAPbouiCOM.BoMessageTime.bmt_Short, SAPbouiCOM.BoStatusBarMessageType.smt_Error)
+                                        objform.Mode = SAPbouiCOM.BoFormMode.fm_UPDATE_MODE
+                                        BubbleEvent = False
+                                        Return
+                                    End If
+                                    If String.IsNullOrEmpty(mtx.Columns.Item("11").Cells.Item(index).Specific.String) Then
+                                        objaddon.objapplication.StatusBar.SetText("Kindly Fill Manufacture Date", SAPbouiCOM.BoMessageTime.bmt_Short, SAPbouiCOM.BoStatusBarMessageType.smt_Error)
+                                        objform.Mode = SAPbouiCOM.BoFormMode.fm_UPDATE_MODE
+                                        BubbleEvent = False
+                                        Return
+                                    End If
+                                Next
+                            End If
+
                         Case SAPbouiCOM.BoEventTypes.et_FORM_CLOSE
                             Dim EventEnum As SAPbouiCOM.BoEventTypes
                             EventEnum = pVal.EventType

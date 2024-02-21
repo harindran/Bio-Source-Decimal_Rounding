@@ -223,12 +223,6 @@ Namespace Decimal_Rounding
                                         BubbleEvent = False
                                         Return
                                     End If
-                                    If String.IsNullOrEmpty(mtx.Columns.Item("11").Cells.Item(index).Specific.String) Then
-                                        objaddon.objapplication.StatusBar.SetText("Kindly Fill Manufacture Date", SAPbouiCOM.BoMessageTime.bmt_Short, SAPbouiCOM.BoStatusBarMessageType.smt_Error)
-                                        objform.Mode = SAPbouiCOM.BoFormMode.fm_UPDATE_MODE
-                                        BubbleEvent = False
-                                        Return
-                                    End If
                                 Next
                             End If
 

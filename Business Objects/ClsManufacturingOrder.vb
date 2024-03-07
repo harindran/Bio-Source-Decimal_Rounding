@@ -112,7 +112,7 @@ Namespace Decimal_Rounding
                                 objmatrix.LoadFromDataSource()
                                 objform.Freeze(False)
                             End If
-
+                            CreateButton(FormUID)
                         Case SAPbouiCOM.BoEventTypes.et_KEY_DOWN
                             If pVal.ItemUID = "txtTANK" And pVal.CharPressed = 9 And pVal.Modifiers = SAPbouiCOM.BoModifiersEnum.mt_None And objform.Mode <> SAPbouiCOM.BoFormMode.fm_FIND_MODE Then
 

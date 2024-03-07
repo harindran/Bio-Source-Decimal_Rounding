@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AddOnRegData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" SlientInstallation="No" SlientUpgrade="No" Partnernmsp="ATPL" SchemaVersion="3.0" Type="" MultipleVersion="false" OnDemand="" OnPremise="" ExtName="Decimal_RoundingV1.8" ExtVersion="1.8" Contdata="www.altrockstech.com" Partner="Altrocks Tech Pvt Ltd" DBType="Both" ClientType="A">
+  <Validity>
+    <SBOCompatibility>
+      <Version From="100.120.01" To="100.210.08" />
+    </SBOCompatibility>
+  </Validity>
+  <Configuration>
+    <Repository>
+      <Properties />
+    </Repository>
+    <Deployment>
+      <Properties />
+    </Deployment>
+    <Assignment>
+      <Properties />
+    </Assignment>
+  </Configuration>
+  <Addons>
+    <Addon Name="" Group="" ForceFlag="" Visible="" AutoAssign="" SelfUpgrd="">
+      <x86 AddonExe="" AddonSig="">
+        <Installation>
+          <Files />
+        </Installation>
+        <Uninstallation>
+          <Files />
+        </Uninstallation>
+      </x86>
+      <x64 AddonExe="E:\Harindran\Project\Bio-Source-Decimal_Rounding\bin\x64\Debug\Decimal_Rounding.exe" AddonSig="">
+        <Installation>
+          <Files>
+            <File FileName="BusinessObjects.Enterprise.Sdk.dll">
+              <Actions />
+            </File>
+            <File FileName="BusinessObjects.Enterprise.Sdk.ebus.netmodule">
+              <Actions />
+            </File>
+            <File FileName="BusinessObjects.Enterprise.Sdk.fssl.netmodule">
+              <Actions />
+            </File>
+            <File FileName="BusinessObjects.Enterprise.Sdk.netmodule">
+              <Actions />
+            </File>
+            <File FileName="BusinessObjects.Enterprise.Sdk.Ssl.netmodule">
+              <Actions />
+            </File>
+            <File FileName="BusinessObjects.Enterprise.Sdk.ZipLib.netmodule">
+              <Actions />
+            </File>
+            <File FileName="BusinessObjects.Foundation.Logging.dll">
+              <Actions />
+            </File>
+            <File FileName="CrystalDecisions.CrystalReports.Design.dll">
+              <Actions />
+            </File>
+            <File FileName="CrystalDecisions.CrystalReports.Engine.dll">
+              <Actions />
+            </File>
+            <File FileName="CrystalDecisions.Enterprise.Framework.dll">
+              <Actions />
+            </File>
+            <File FileName="CrystalDecisions.Enterprise.InfoStore.dll">
+              <Actions />
+            </File>
+            <File FileName="CrystalDecisions.Enterprise.PluginManager.dll">
+              <Actions />
+            </File>
+            <File FileName="CrystalDecisions.Enterprise.Viewing.ReportSource.dll">
+              <Actions />
+            </File>
+            <File FileName="CrystalDecisions.ReportAppServer.ClientDoc.dll">
+              <Actions />
+            </File>
+            <File FileName="CrystalDecisions.ReportAppServer.CommLayer.dll">
+              <Actions />
+            </File>
+            <File FileName="CrystalDecisions.ReportAppServer.CommonControls.dll">
+              <Actions />
+            </File>
+            <File FileName="CrystalDecisions.ReportAppServer.CommonObjectModel.dll">
+              <Actions />
+            </File>
+            <File FileName="CrystalDecisions.ReportAppServer.Controllers.dll">
+              <Actions />
+            </File>
+            <File FileName="CrystalDecisions.ReportAppServer.CubeDefModel.dll">
+              <Actions />
+            </File>
+            <File FileName="CrystalDecisions.ReportAppServer.DataDefModel.dll">
+              <Actions />
+            </File>
+            <File FileName="CrystalDecisions.ReportAppServer.DataSetConversion.dll">
+              <Actions />
+            </File>
+            <File FileName="CrystalDecisions.ReportAppServer.ObjectFactory.dll">
+              <Actions />
+            </File>
+            <File FileName="CrystalDecisions.ReportAppServer.Prompting.dll">
+              <Actions />
+            </File>
+            <File FileName="CrystalDecisions.ReportAppServer.ReportDefModel.dll">
+              <Actions />
+            </File>
+            <File FileName="CrystalDecisions.ReportAppServer.XmlSerialize.dll">
+              <Actions />
+            </File>
+            <File FileName="CrystalDecisions.ReportSource.dll">
+              <Actions />
+            </File>
+            <File FileName="CrystalDecisions.Shared.dll">
+              <Actions />
+            </File>
+            <File FileName="CrystalDecisions.Web.dll">
+              <Actions />
+            </File>
+            <File FileName="CrystalDecisions.Windows.Forms.dll">
+              <Actions />
+            </File>
+            <File FileName="Decimal_Rounding.b1s">
+              <Actions />
+            </File>
+            <File FileName="Decimal_Rounding.exe">
+              <Actions />
+            </File>
+            <File FileName="Decimal_Rounding.exe.config">
+              <Actions />
+            </File>
+            <File FileName="Decimal_Rounding.pdb">
+              <Actions />
+            </File>
+            <File FileName="FlashControlV71.dll">
+              <Actions />
+            </File>
+            <File FileName="log4net.dll">
+              <Actions />
+            </File>
+            <File FileName="SAPBusinessOneSDK.dll">
+              <Actions />
+            </File>
+            <File FileName="ShockwaveFlashObjects.dll">
+              <Actions />
+            </File>
+            <File FileName="stdole.dll">
+              <Actions />
+            </File>
+          </Files>
+        </Installation>
+        <Uninstallation>
+          <Files>
+            <File FileName="BusinessObjects.Enterprise.Sdk.dll">
+              <Actions />
+            </File>
+            <File FileName="BusinessObjects.Enterprise.Sdk.ebus.netmodule">
+              <Actions />
+            </File>
+            <File FileName="BusinessObjects.Enterprise.Sdk.fssl.netmodule">
+              <Actions />
+            </File>
+            <File FileName="BusinessObjects.Enterprise.Sdk.netmodule">
+              <Actions />
+            </File>
+            <File FileName="BusinessObjects.Enterprise.Sdk.Ssl.netmodule">
+              <Actions />
+            </File>
+            <File FileName="BusinessObjects.Enterprise.Sdk.ZipLib.netmodule">
+              <Actions />
+            </File>
+            <File FileName="BusinessObjects.Foundation.Logging.dll">
+              <Actions />
+            </File>
+            <File FileName="CrystalDecisions.CrystalReports.Design.dll">
+              <Actions />
+            </File>
+            <File FileName="CrystalDecisions.CrystalReports.Engine.dll">
+              <Actions />
+            </File>
+            <File FileName="CrystalDecisions.Enterprise.Framework.dll">
+              <Actions />
+            </File>
+            <File FileName="CrystalDecisions.Enterprise.InfoStore.dll">
+              <Actions />
+            </File>
+            <File FileName="CrystalDecisions.Enterprise.PluginManager.dll">
+              <Actions />
+            </File>
+            <File FileName="CrystalDecisions.Enterprise.Viewing.ReportSource.dll">
+              <Actions />
+            </File>
+            <File FileName="CrystalDecisions.ReportAppServer.ClientDoc.dll">
+              <Actions />
+            </File>
+            <File FileName="CrystalDecisions.ReportAppServer.CommLayer.dll">
+              <Actions />
+            </File>
+            <File FileName="CrystalDecisions.ReportAppServer.CommonControls.dll">
+              <Actions />
+            </File>
+            <File FileName="CrystalDecisions.ReportAppServer.CommonObjectModel.dll">
+              <Actions />
+            </File>
+            <File FileName="CrystalDecisions.ReportAppServer.Controllers.dll">
+              <Actions />
+            </File>
+            <File FileName="CrystalDecisions.ReportAppServer.CubeDefModel.dll">
+              <Actions />
+            </File>
+            <File FileName="CrystalDecisions.ReportAppServer.DataDefModel.dll">
+              <Actions />
+            </File>
+            <File FileName="CrystalDecisions.ReportAppServer.DataSetConversion.dll">
+              <Actions />
+            </File>
+            <File FileName="CrystalDecisions.ReportAppServer.ObjectFactory.dll">
+              <Actions />
+            </File>
+            <File FileName="CrystalDecisions.ReportAppServer.Prompting.dll">
+              <Actions />
+            </File>
+            <File FileName="CrystalDecisions.ReportAppServer.ReportDefModel.dll">
+              <Actions />
+            </File>
+            <File FileName="CrystalDecisions.ReportAppServer.XmlSerialize.dll">
+              <Actions />
+            </File>
+            <File FileName="CrystalDecisions.ReportSource.dll">
+              <Actions />
+            </File>
+            <File FileName="CrystalDecisions.Shared.dll">
+              <Actions />
+            </File>
+            <File FileName="CrystalDecisions.Web.dll">
+              <Actions />
+            </File>
+            <File FileName="CrystalDecisions.Windows.Forms.dll">
+              <Actions />
+            </File>
+            <File FileName="Decimal_Rounding.b1s">
+              <Actions />
+            </File>
+            <File FileName="Decimal_Rounding.exe">
+              <Actions />
+            </File>
+            <File FileName="Decimal_Rounding.exe.config">
+              <Actions />
+            </File>
+            <File FileName="Decimal_Rounding.pdb">
+              <Actions />
+            </File>
+            <File FileName="FlashControlV71.dll">
+              <Actions />
+            </File>
+            <File FileName="log4net.dll">
+              <Actions />
+            </File>
+            <File FileName="SAPBusinessOneSDK.dll">
+              <Actions />
+            </File>
+            <File FileName="ShockwaveFlashObjects.dll">
+              <Actions />
+            </File>
+            <File FileName="stdole.dll">
+              <Actions />
+            </File>
+          </Files>
+        </Uninstallation>
+      </x64>
+    </Addon>
+  </Addons>
+  <XApps>
+    <XApp Name="" Path="" FileName="" />
+  </XApps>
+  <UDQs>
+    <UDQ udqname="">
+      <Hana FileName="" />
+    </UDQ>
+  </UDQs>
+</AddOnRegData>
